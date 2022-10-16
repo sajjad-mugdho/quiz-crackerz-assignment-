@@ -3,6 +3,7 @@ import { Footer } from 'react-daisyui';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Component/Blog/Blog';
+import Erorr from './Component/Erorr/Erorr';
 import Quiz from './Component/Quiz/Quiz';
 import Statistic from './Component/Statistic/Statistic';
 import Topic from './Component/Topic/Topic';
@@ -40,7 +41,7 @@ function App() {
         path: '/blog',
         element: <Blog />
       },
-      { path: '*', element: <div> Route Not Found</div> }
+      { path: '*', element: <Erorr></Erorr> }
 
       ]
     }
