@@ -8,7 +8,7 @@ const Topic = () => {
 
     const quizzes = useLoaderData();
 
-    console.log('Topic:', quizzes);
+
 
     return (
         <div>
