@@ -18,7 +18,7 @@ const Topic = () => {
             <div className=' grid grid-cols-4 gap-5 justify-center m-20'>
 
                 {
-                    quizzes.map(quiz => <QuizSection key={quiz.id} quiz={quiz} />)
+                    quizzes.data.map(quiz => <QuizSection key={quiz.id} quiz={quiz} />)
                 }
             </div>
 

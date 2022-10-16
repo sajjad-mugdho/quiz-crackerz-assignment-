@@ -14,7 +14,12 @@ function App() {
       element: <Main></Main>,
       children: [{
         path: '/',
-        loader: () => fetch('quizzes.json'),
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+        element: <Topic />
+      },
+      {
+        path: '/topic',
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
         element: <Topic />
       },
       {
@@ -24,7 +29,8 @@ function App() {
       {
         path: '/blog',
         element: <Blog />
-      }
+      },
+      { path: '*', element: <div> Route Not Found</div> }
 
       ]
     }
