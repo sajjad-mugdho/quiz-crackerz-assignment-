@@ -5,6 +5,7 @@ import SingleQuiz from '../SingleQuiz/SingleQuiz';
 const Quiz = () => {
     const quiz = useLoaderData().data
     // console.log(quiz);
+
     return (
         <div>
             <img className='w-[200px] items-center' src={quiz.logo} alt="logo" />
