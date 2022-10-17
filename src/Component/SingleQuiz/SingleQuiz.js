@@ -68,9 +68,7 @@ const SingleQuiz = (props) => {
     };
 
     // console.log(question);
-    const correctAnswer = question.correctAnswer;
 
-    const optionClick = question.option;
     const handleClick = (optionClick) => {
         console.log('clicked', optionClick);
         (optionClick == question.correctAnswer) ? correct(optionClick) : wrong(optionClick);
